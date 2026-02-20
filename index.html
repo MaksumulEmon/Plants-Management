@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Tailwind Css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="container mx-auto space-y-5">
+
+        <h1 class="text-5xl font-bold text-green-700">Plant Tracker</h1>
+        <div class="grid grid-cols-3 gap-4 ">
+
+            <div class="bg-amber-200 p-4 rounded-3xl">
+                <p class="font-bold text-2xl">Total</p>
+                <P id="total">0</P>
+            </div>
+
+            <div class="bg-green-200 p-4 rounded-3xl">
+                <p class="font-bold text-2xl"> Thrive</p>
+                <P id="thriveCount">0</P>
+            </div>
+
+            <div class="bg-red-200 p-4 rounded-3xl">
+                <p class="font-bold text-2xl">Struggling</p>
+                <P id="strugglingCount">0</P>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <hr class="my-5">
+
+    <main class="container mx-auto">
+
+        <div class="space-x-4">
+            <button class="bg-black text-white px-5 py-2 text-lg font-bold " id="all-filter-btn">All</button>
+            <button class="bg-gray-300 px-5 py-2 text-lg font-bold" id="Triving-filter-btn">Triving</button>
+            <button class="bg-gray-300 px-5 py-2 text-lg font-bold" id="struggling-filter-btn">Struggling</button>
+        </div>
+
+
+        <section id="plants">
+
+        </section>
+    </main>
+
+</body>
+
+</html>
