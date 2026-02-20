@@ -41,9 +41,12 @@
     <main class="container mx-auto">
 
         <div class="space-x-4 mb-6">
-            <button class="bg-black text-white px-5 py-2 text-lg font-bold " id="all-filter-btn">All</button>
-            <button class="bg-gray-300 px-5 py-2 text-lg font-bold" id="Triving-filter-btn">Triving</button>
-            <button class="bg-gray-300 px-5 py-2 text-lg font-bold" id="struggling-filter-btn">Struggling</button>
+            <button onclick="togglestyle('all-filter-btn')" class="bg-black text-white px-5 py-2 text-lg font-bold "
+                id="all-filter-btn">All</button>
+            <button onclick="togglestyle('triving-filter-btn')" class="bg-gray-300 px-5 py-2 text-lg font-bold"
+                id="triving-filter-btn">Triving</button>
+            <button onclick="togglestyle('struggling-filter-btn')" class="bg-gray-300 px-5 py-2 text-lg font-bold"
+                id="struggling-filter-btn">Struggling</button>
         </div>
 
 
@@ -152,7 +155,7 @@
     </main>
 
     <!-- Java Script link -->
-     <script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
